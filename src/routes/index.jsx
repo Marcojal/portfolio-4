@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import { MainTemplate } from '../templates/MainTemplate'
 import { HomePage, LoginPage, LogOutPage, ArticlesForm, EditarArticle } from '../pages'
 import { AccesoPrivado } from '../components/AccesoPrivado'
@@ -8,7 +8,7 @@ import { ArticlePage } from '../pages'
 
 // creamos el dirigidor de páginas: Router, objeto con childrens.
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <MainTemplate />,
